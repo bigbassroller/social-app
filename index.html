@@ -49,8 +49,6 @@
             		</div><!--/.navbar-collapse -->
             	</div>
             </div>
-
-            <!-- Main jumbotron for a primary marketing message or call to action -->
             <div class="jumbotron">
             	<div class="container">
             		<h1>Hello, world!</h1>
@@ -60,7 +58,6 @@
             </div>
 
             <div class="container">
-            	<!-- Example row of columns -->
             	<div class="row">
             		<div class="col-md-4">
             			<h2>Heading</h2>
@@ -99,9 +96,6 @@
             			</li>
             		</ul>
             	</div><!-- data-ng-controller -->
-
-            	<hr>
-
             	<footer>
             		<p>&copy; Company 2014</p>
             	</footer>
@@ -111,31 +105,17 @@
             <script src="js/vendor/bootstrap.min.js"></script>
             <script src="js/main.js"></script>
           	<script>
-          	  // create the PostsCtrl module
           		var app = angular.module('app', [])
-
-          		// create the PostsCtrl module
-          		// dependency inject $scope
-          		app.controller('PostsCtrl', function ($scope) {
-
-          			// the function runs whe the "add Post" button is clicked
+          		app.controller('PostsCtrl', function ($scope, $http) {
           			$scope.addPost = function () {
-
-          			// Only add a post if there is body
           			if ($scope.postBody) {
-          				// unshift a new post into $scope.posts
 	          			$scope.posts.unshift({
 	          				username: 'dickeyxxx',
-	          				body: $scope.postBody //use the text entered
+	          				body: $scope.postBody 
 	          			})
-	          			// clear out the input field
 	          			$scope .postBody = null
-	          			
 	          		}
-
-          			}
-
-          		// Starting data
+          		}
           		$scope.posts = [
           			{
           				username: 'dickeyxxx',
@@ -146,9 +126,7 @@
           				body: 'trying out angular.js...'
           			}
           		]
-
           		})
-          		
           	</script>
           </body>
           </html>
