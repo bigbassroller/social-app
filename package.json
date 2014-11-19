@@ -6,6 +6,10 @@
     "express": "^4.10.2",
     "gulp": "^3.8.10",
     "gulp-concat": "^2.4.1",
-    "mongoose": "^3.8.19"
+    "mongoose": "^3.8.19",
+    "uglify": "^0.1.0"
+  },
+  "devDependencies": {
+    "gulp-ng-annotate": "^0.3.5"
   }
 }
