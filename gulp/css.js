@@ -1,9 +1,11 @@
 var gulp   = require('gulp')
+var concat = require('gulp-concat')
 var stylus = require('gulp-stylus')
 
 gulp.task('css', function () {
-  return gulp.src('css/app.styl')
+  return gulp.src(['bower_components/bootstrap-stylus/stylus/bootstrap.styl', 'css/app.styl'])
     .pipe(stylus())
+    .pipe(concat('app.css'))
     .pipe(gulp.dest('assets'))
 })
 
