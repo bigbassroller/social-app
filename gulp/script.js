@@ -6,8 +6,10 @@ var sourcemaps = require('gulp-sourcemaps')
 
 gulp.task('js', function () {
   return gulp.src([
+  	'bower_components/jquery/dist/jquery.js',
+  	'bower_components/angular/angular.js', 
   	'ng/module.js', 
-  	'ng/**/*.js', 
+  	'ng/**/*.js',
   	'bower_components/bootstrap-stylus/js/transition.js',
   	'bower_components/bootstrap-stylus/js/affix.js',
   	'bower_components/bootstrap-stylus/js/alert.js',
