@@ -18,10 +18,10 @@ gulp.task('js', function () {
   	'bower_components/bootstrap-stylus/js/collapse.js',
   	'bower_components/bootstrap-stylus/js/dropdown.js',
   	'bower_components/bootstrap-stylus/js/modal.js',
+    'bower_components/bootstrap-stylus/js/tooltip.js',
   	'bower_components/bootstrap-stylus/js/popover.js',
   	'bower_components/bootstrap-stylus/js/scrollspy.js',
-  	'bower_components/bootstrap-stylus/js/tab.js',
-  	'bower_components/bootstrap-stylus/js/tooltip.js'
+  	'bower_components/bootstrap-stylus/js/tab.js'
   	])
     .pipe(sourcemaps.init())
       .pipe(ngAnnotate())
