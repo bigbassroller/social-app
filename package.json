@@ -1,13 +1,17 @@
 {
   "name": "socialapp",
   "dependencies": {
+    "bcrypt": "^0.8.0",
     "body-parser": "^1.9.2",
     "ejs": "^1.0.0",
     "express": "^4.10.2",
     "gulp": "^3.8.10",
     "gulp-concat": "^2.4.1",
     "gulp-nodemon": "^1.0.4",
+    "jwt-simple": "^0.2.0",
     "mongoose": "^3.8.19",
+    "ng-annotate": "^0.14.0",
+    "nodemon": "^1.2.1",
     "uglify": "^0.1.0"
   },
   "devDependencies": {
